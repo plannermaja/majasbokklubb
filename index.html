@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokrecensioner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bokrecensioner</h1>
+    </header>
+    
+    <main>
+        <section id="add-review">
+            <h2>Ladda upp din recension</h2>
+            <form id="review-form">
+                <label for="book-title">Titel:</label>
+                <input type="text" id="book-title" required>
+
+                <label for="book-author">Författare:</label>
+                <input type="text" id="book-author" required>
+
+                <label for="review-text">Recension:</label>
+                <textarea id="review-text" rows="5" required></textarea>
+
+                <label for="book-image">Ladda upp bild:</label>
+                <input type="file" id="book-image" accept="image/*">
+
+                <button type="submit">Ladda upp recension</button>
+            </form>
+        </section>
+
+        <section id="reviews">
+            <h2>Recensioner</h2>
+            <div id="review-list">
+                <!-- Recensioner kommer att läggas till här -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
